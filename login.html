@@ -4,6 +4,15 @@ To Do: Implement submit and cancel functionality
 <html>
 	<head>
 		<title>Test</title>
+		<script>
+			function onLoginBtnClick() {
+				alert(document.getElementById("username").value);
+			}
+
+			function onClearBtnClick() {
+				document.getElementById("username").value = "";
+			}
+		</script>
 	<head>
 	
 	<body>
@@ -15,12 +24,12 @@ To Do: Implement submit and cancel functionality
 				<label for="username">USERNAME</label>
 			</div>
 			<div>
-				<input id="password" type="number"/>
+				<input id="password" type="text"/>
 				<label for="password">PASSWORD</label>
 			</div>
 			
-			<button id="btnSubmit" type="submit" value="submit">Submit</button>
-			<button id="btnCancel" type="reset" value="Reset">Cancel</button>
+			<button id="btnSubmit" type="submit" onClick="onLoginBtnClick()">Submit</button>
+			<button id="btnCancel" type="reset" onClick="onClearBtnClick()">Clear</button>
 		</form>
 		</div>
 	</body>

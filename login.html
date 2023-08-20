@@ -1,0 +1,50 @@
+<!-- 
+Author: John Michael U. Villaraza
+Comment: Javascript implementation will be prioritized. CSS to
+follow
+To Do:Implement submit and cancel functionality 
+-->
+
+<html>
+	<head>
+		<title>Villaraza's LOGIN Page</title>
+
+		<script>
+ 			function onLoginBtnClick()
+			{
+ 			alert(document.getElementById("username").value);
+ 			}
+
+ 			function onClearBtnClick()
+			{
+ 			document.getElementById("username").value = "";
+			}
+		 </script>
+	</head>
+	
+	<body>
+
+		<div style="border: black solid; padding: 10px; max-width: 300px">
+ 		<form>
+			<div>
+				<label for="USERNAME">USERNAME</label>
+				<input id="username" type="text"/>
+			</div>
+
+			<div>
+				<label for="PASSWORD">PASSWORD</label>
+				<input id="password" type="text"/>
+			</div>
+
+			<div>
+				<button type="submit" onclick="onLoginBtnClick()" value="submit">Submit </button>
+				<button type="reset" value="cancel">Cancel </button>
+			</div>
+		
+		</form>
+	</body>
+	
+
+
+</html>
+

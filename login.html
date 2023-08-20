@@ -10,10 +10,13 @@ To Do:Implement submit and cancel functionality
 		<title>Villaraza's LOGIN Page</title>
 
 		<script>
- 			function onLoginBtnClick(){
+ 			function onLoginBtnClick()
+			{
  			alert(document.getElementById("username").value);
  			}
- 			function onClearBtnClick(){
+
+ 			function onClearBtnClick()
+			{
  			document.getElementById("username").value = "";
 			}
 		 </script>
@@ -27,21 +30,18 @@ To Do:Implement submit and cancel functionality
 				<label for="USERNAME">USERNAME</label>
 				<input id="username" type="text"/>
 			</div>
+
 			<div>
-	
-			<label for="PASSWORD">PASSWORD</label>
-			<input id="password" type="text"/>
-			
+				<label for="PASSWORD">PASSWORD</label>
+				<input id="password" type="text"/>
 			</div>
+
 			<div>
 
-			<button type="submit" onClick="onLoginBtnClick() "value="submit">submit</button>
-
-			<button type="reset" value="cancel">Cancel</button>
-				
+				<button type="submit" onClick="onLoginBtnClick() "value="submit">submit</button>
+				<button type="reset" value="cancel">Cancel</button>
 			</div>
-		</div>
-
+		
 		</form>
 	</body>
 	

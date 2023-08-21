@@ -6,11 +6,27 @@ To Do: Implement submit and cancel functionality
 		<title>Test</title>
 		<script>
 			function onLoginBtnClick() {
-				alert(document.getElementById("username").value);
+				const errorMsg = "INCOMPLETE LOGIN DETAILS";
+				//alert(document.getElementById("username").value);
+				var username = document.getElementById("username").value.trim();
+				let isUsernameEmpty = true;
+
+				if (username.length === 0) {
+					let isUsernameEmpty = true;
+				} else {
+					isUsernameEmpty = false;
+				}
+				console.log("isUsernameEmpty=", isUsernameEmpty)
+
+				alert(errorMsg)
+				errorMsg = "ERROR: Either the username or the password were not provided. Please try again."
 			}
 
 			function onClearBtnClick() {
 				document.getElementById("username").value = "";
+			}
+			function test() {
+				console.log("test")
 			}
 		</script>
 	<head>
@@ -28,7 +44,8 @@ To Do: Implement submit and cancel functionality
 				<label for="password">PASSWORD</label>
 			</div>
 			
-			<button id="btnSubmit" type="submit" onClick="onLoginBtnClick()">Submit</button>
+			<button id="btnSubmit" type="button" onClick="onLoginBtnClick()">Login</button>
+			<Button type="button" onClick="test()">test</Button>
 			<button id="btnCancel" type="reset" onClick="onClearBtnClick()">Clear</button>
 		</form>
 		</div>

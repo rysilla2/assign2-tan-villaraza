@@ -12,7 +12,15 @@ To Do:Implement submit and cancel functionality
 		<script>
  			function onLoginBtnClick()
 			{
- 			alert(document.getElementById("username").value);
+			var username = document.getElementById("username").value.trim();
+ 			var isUsernameEmpty = true;
+ 			if(username.length === 0){
+ 			var isUsernameEmpty = true;
+ 			} else {
+ 			isUsernameEmpty = false;
+ 			}
+ 			console.log("isUsernameEmpty=", isUsernameEmpty);
+ 			
  			}
 
  			function onClearBtnClick()

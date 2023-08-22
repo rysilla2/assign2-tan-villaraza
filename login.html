@@ -15,20 +15,21 @@ To Do:Implement submit and cancel functionality
 			const errorMsg = "INCOMPLETE LOGIN DETAILS";
 			var username = document.getElementById("username").value.trim();
  			var isUsernameEmpty = true;
-
- 			if(username.length === 0){
- 				isUsernameEmpty = true;
+			
+			if(username.length === 0){
+			alert(errorMsg);	
+ 			isUsernameEmpty = true;
  			} else {
  				isUsernameEmpty = false;
  			}
  			console.log("isUsernameEmpty=", isUsernameEmpty);
- 			
  			}
 
  			function onClearBtnClick()
 			{
  			document.getElementById("username").value = "";
 			}
+
 		 </script>
 	</head>
 	
